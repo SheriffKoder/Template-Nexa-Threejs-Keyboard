@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useRef, useEffect } from 'react'
 import { testimonials_content } from '@/section-contents'
-import ProofCard from '@/app/development/testimonials/proof-card'
+import ProofCard from '@/features/testimonials/proof-card'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
