@@ -124,7 +124,7 @@
 }
 
 .paragraph1 {
-  @apply text-sm md:text-xl font-extralight
+  @apply text-sm md:text-3xl font-extralight
 }
 
 .paragraph2 {

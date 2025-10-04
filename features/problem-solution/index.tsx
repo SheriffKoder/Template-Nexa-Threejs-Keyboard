@@ -132,9 +132,19 @@ const ProblemSolution = () => {
               <h1 className="heading1 md:w-[25%]">
                 <ScrollReveal duration={1} start="top 110%">  {problem_solution_content.Texts.heading2} </ScrollReveal>
               </h1>
-              <p className="paragraph1 md:w-[25%]">
-                <ScrollReveal duration={1} start="top 110%">  {problem_solution_content.Texts.paragraph2} </ScrollReveal>
-              </p>
+              <div className="paragraph1 md:w-[25%]">
+                <ScrollReveal duration={1} start="top 110%">
+                  <p className="text-sm md:text-3xl font-extralight">
+                    {problem_solution_content.Texts.paragraph2.split('.').map((sentence, index) => (
+                      <span key={index}>
+                        {sentence.trim()}
+                        {index < problem_solution_content.Texts.paragraph2.split('.').length - 1 && '.'}
+                        {index < problem_solution_content.Texts.paragraph2.split('.').length - 1 && <br />}
+                      </span>
+                    ))}
+                  </p>
+                </ScrollReveal>
+              </div>
         </div>
 
         </div>

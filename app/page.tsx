@@ -6,7 +6,7 @@ import SceneWrapper from "@/features/hero/scene/keyboard-scene";
 import ProblemSolution from "@/features/problem-solution";
 import HowItWorks from "@/features/how-it-works";
 import Pricing from "@/features/pricing";
-import Testimonials from "@/app/development/testimonials/page";
+import Testimonials from "@/features/testimonials";
 import FinalCta from "@/features/final-cta";
 import Footer from "@/components/layout/footer";
 import Image from "next/image";
