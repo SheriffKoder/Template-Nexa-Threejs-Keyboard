@@ -134,12 +134,12 @@ const ProblemSolution = () => {
               </h1>
               <div className="paragraph1 md:w-[25%]">
                 <ScrollReveal duration={1} start="top 110%">
-                  <p className="text-sm md:text-3xl font-extralight">
+                  <p className="text-sm md:text-3xl font-extralight flex flex-row md:flex-col items-center md:items-start justify-center md:justify-center gap-0">
                     {problem_solution_content.Texts.paragraph2.split('.').map((sentence, index) => (
-                      <span key={index}>
+                      <span key={index} className="ml-1">
                         {sentence.trim()}
                         {index < problem_solution_content.Texts.paragraph2.split('.').length - 1 && '.'}
-                        {index < problem_solution_content.Texts.paragraph2.split('.').length - 1 && <br />}
+                        {index < problem_solution_content.Texts.paragraph2.split('.').length - 1 && <br className="hidden md:block" />}
                       </span>
                     ))}
                   </p>
