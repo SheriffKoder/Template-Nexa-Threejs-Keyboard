@@ -98,7 +98,7 @@ export const problem_solution_content = {
 
         {
             text: "AI Agents",
-            icon: "/images/solution-coins/ai.png",
+            icon: "/images/solution-coins/ai-logo.png",
         },
 
 
