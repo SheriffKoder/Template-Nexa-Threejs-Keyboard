@@ -1,103 +1,76 @@
+import { ThemeButtons } from "@/components/ui/ThemeToggler_Button";
+import Hero from "@/features/hero";
+import Navbar from "@/components/layout/navbar";
+import MobileNav from "@/components/layout/mobile-nav";
+import SceneWrapper from "@/features/hero/scene/keyboard-scene";
+import ProblemSolution from "@/features/problem-solution";
+import HowItWorks from "@/features/how-it-works";
+import Pricing from "@/features/pricing";
+import Testimonials from "@/app/development/testimonials/page";
+import FinalCta from "@/features/final-cta";
+import Footer from "@/components/layout/footer";
 import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="
+    flex flex-col items-center justify-center bg-black">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <div className="hidden md:block absolute top-0 left-0 w-full h-screen z-0">
+        <SceneWrapper />
+        <div className="pointer-events-none bg-gradient-to-t from-black to-20% to-transparent absolute inset-0 z-1" />
+      </div>
+
+      <div className="block md:hidden absolute top-0 left-0 w-full h-screen z-0">
+        <Image 
+          src="/images/hero-background-1.png" 
+          alt="Keyboard Hero Background" 
+          height={1138} // Actual image height to prevent incorrect resizing
+          width={902} // Actual image width to prevent incorrect resizing
+          className="object-cover w-full h-full" 
+          quality={100} // Maximum quality (default is 75) for crisp image
+          priority // Load immediately for better performance on mobile
+          unoptimized // Bypass Next.js optimization that can reduce quality
+        />
+      </div>
+
+
+      <div className="hidden md:block">
+        <Navbar />
+      </div>
+
+      <div className="block md:hidden w-full">
+        <MobileNav />
+      </div>
+
+
+      <div className="max-w-[1500px] pointer-events-none mx-auto px-4 md:px-[5%] relative z-1">
+        <Hero />
+      </div>
+
+      <div className="max-w-[1500px] mx-auto md:px-[5%] z-1">
+        <ProblemSolution />
+      </div>
+
+      <div className="w-full px-4 z-1">
+        <HowItWorks />
+      </div>
+
+      <div className="max-w-[1500px] px-4 w-full mx-auto z-1">
+        <Pricing />
+      </div>
+
+      <div className="max-w-[1500px] px-4 w-full mx-auto z-1 mt-8 md:mt-0">
+        <Testimonials />
+      </div>
+
+      <div className="h-screen px-4 w-full">
+        <FinalCta />
+      </div>
+
+      <div className="w-full px-4 z-1 h-fit bg-black">
+        <Footer />
+      </div>
+
     </div>
   );
 }

@@ -1,0 +1,37 @@
+/* CSS Variables (from container_content.css) */
+:root {
+    --clr--contact-background-hover: hsla(0, 0%, 75%, 0.2);
+    --timing1: 0.5s;
+    --timing2: 5s;
+    --clr-gradient1: #FF6B00;
+    --clr-gradient3: #e234c8;
+    --clr-gradient2: #ffffff00;
+
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+/* Add Gradient Border */
+.gradient_test {
+
+    /* Gradient Border without Radius */
+/*              border: 1px solid;
+    border-image-slice: 1;                  
+    border-image-source: linear-gradient(to left, var(--clr-gradient1), var(--clr-gradient2));
+    */
+
+    background: linear-gradient(to left, var(--clr-gradient1) 0%, var(--clr-gradient2) 70%);
+    animation: gradient_test_anim 4s linear infinite;
+
+}
+
+
+@keyframes gradient_test_anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
