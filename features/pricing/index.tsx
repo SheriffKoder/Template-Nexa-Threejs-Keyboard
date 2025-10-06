@@ -9,7 +9,7 @@ import ScrollReveal from '@/components/animations/scroll-reveal'
 const Pricing = () => {
 
   return (
-      <div className='w-full md:h-screen min-h-screen flex flex-col items-center justify-center relative mx-auto px-4
+      <div className='w-full md:h-[1500px] min-h-screen lg:h-screen flex flex-col items-center justify-start lg:justify-center relative mx-auto px-4
       '>
 
         <ScrollReveal duration={1} start="top 100%">

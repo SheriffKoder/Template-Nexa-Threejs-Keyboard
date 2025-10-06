@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 const CardWrapper = ({ plans }: { plans: any[] }) => {
   return (
     <div className='z-2
-    relative grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4
+    relative grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4
       h-full w-full'>
             {plans.map((plan, index) => (
                 <div className='relative w-full h-full group ' key={index}>
