@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="h-screen md:min-h-[700px] w-full
     flex flex-col items-start justify-center md:justify-end text-white
-    text-center md:text-left md:pb-[10%]">
+    text-center md:text-left px-4 md:px-[5%] pb-[5%]">
         
         <div className="flex flex-col items-start justify-center md:max-w-[60%]">
             <ScrollReveal duration={1}>

@@ -58,15 +58,8 @@ const HowItWorks = () => {
         // Calculate which step should be active based on scroll progress
         const progress = self.progress
         
-        // Only activate steps after 15% scroll progress
-        if (progress < 0.15) {
-          setCurrentStep(-1) // No step active
-          setAnimateCards(false)
-          return
-        }
-        
-        // Map remaining 85% to the 5 steps
-        const adjustedProgress = (progress - 0.15) / 0.85
+        // Map progress directly to the 5 steps (no 15% margin)
+        const adjustedProgress = progress
         const stepIndex = Math.floor(adjustedProgress * how_it_works_content.steps.length)
         const clampedIndex = Math.min(Math.max(0, stepIndex), how_it_works_content.steps.length - 1)
         setCurrentStep(clampedIndex)
@@ -87,7 +80,7 @@ const HowItWorks = () => {
 
           <ScrollReveal duration={1} start="top 100%" className='flex flex-col gap-2'>
             <h2 className="text-xl mb-1 text-primary">{how_it_works_content.Texts.heading}</h2>
-            <span className="text-sm text-gray-400">Scroll to begin</span>
+            {/* <span className="text-sm text-gray-400">Scroll to begin</span> */}
           </ScrollReveal>
 
           {/* <p className="paragraph1 mb-8">

@@ -58,8 +58,8 @@ const ProblemSolution = () => {
       text-center md:text-left pt-[10%] relative overflow-hidden"
     >
 
-        <div className="flex flex-col items-start justify-center md:max-w-[60%]
-        w-full text-center mx-auto gap-4 px-4">
+        <div className="flex flex-col md:flex-row items-start justify-center text-start
+        w-full mx-auto gap-4 md:gap-[8rem] px-4">
             <ScrollReveal duration={1} start="top 100%">
                 <h1 className="heading1">{problem_solution_content.Texts.heading}</h1>
             </ScrollReveal>

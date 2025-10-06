@@ -1,23 +1,18 @@
 
 export const navbar_links = [
     {
-        name: "Features",
-        href: "/",
+        name: "How it works",
+        href: "#how-it-works",
         type: "link",
     },
     {
         name: "Pricing",
-        href: "/about",
-        type: "link",
-    },
-    {
-        name: "Contact",
-        href: "/contact",
+        href: "#pricing",
         type: "link",
     },
     {
         name: "Get Started",
-        href: "/get-started",
+        href: "#get-started",
         type: "button-primary",
     },
     {

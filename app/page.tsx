@@ -43,7 +43,7 @@ export default function Home() {
       </div>
 
 
-      <div className="max-w-[1500px] pointer-events-none mx-auto px-4 md:px-[5%] relative z-1">
+      <div className="pointer-events-none mx-auto border relative z-1 w-full">
         <Hero />
       </div>
 
@@ -51,11 +51,11 @@ export default function Home() {
         <ProblemSolution />
       </div>
 
-      <div className="w-full px-4 z-1">
+      <div className="w-full px-4 z-1" id="how-it-works">
         <HowItWorks />
       </div>
 
-      <div className="max-w-[1500px] px-4 w-full mx-auto z-1">
+      <div className="max-w-[1500px] px-4 w-full mx-auto z-1" id="pricing">
         <Pricing />
       </div>
 
@@ -63,7 +63,7 @@ export default function Home() {
         <Testimonials />
       </div>
 
-      <div className="h-screen px-4 w-full">
+      <div className="h-screen px-4 w-full" id="get-started">
         <FinalCta />
       </div>
 

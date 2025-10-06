@@ -40,6 +40,7 @@ const Navbar = () => {
     }
   }, [])
 
+  
   // Separate links and buttons from the constants
   const links = navbar_links.filter((item) => item.type === 'link')
   const buttons = navbar_links.filter((item) => item.type.startsWith('button'))
@@ -47,7 +48,7 @@ const Navbar = () => {
   return (
     <nav 
       ref={navRef}
-      className="absolute top-0 left-0 w-full z-[50] px-6 py-3 flex justify-between items-center
+      className="fixed top-0 left-0 w-full z-[50] px-6 py-3 flex justify-between items-center
       bg-black/10"
     >
       {/* Left side - Logo and Links */}

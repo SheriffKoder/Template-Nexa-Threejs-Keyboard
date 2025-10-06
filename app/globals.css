@@ -112,7 +112,7 @@
 }
 
 .heading1 {
-  @apply text-4xl md:text-6xl xl:text-[5rem] font-medium tracking-tighter
+  @apply text-4xl md:text-6xl xl:text-[3rem] font-medium tracking-tighter
 }
 
 .heading2 {
@@ -124,7 +124,7 @@
 }
 
 .paragraph1 {
-  @apply text-sm md:text-3xl font-extralight
+  @apply text-sm md:text-xl font-extralight
 }
 
 .paragraph2 {
@@ -137,7 +137,7 @@
 }
 
 .buttonText {
-  @apply text-sm md:text-lg
+  @apply text-sm md:text-base
 }
 
 /* media screen landscape and width less than 900 px and height less than 600 px */

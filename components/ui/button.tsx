@@ -15,7 +15,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
   className = '',
   scale = 1
 }, ref) => {
-  const baseStyles = "buttonText cursor-pointer text-white rounded-[10px] px-7 py-4 text-[16px] font-bold uppercase leading-[90%] localfont2 transition-colors duration-300"
+  const baseStyles = "buttonText cursor-pointer text-white rounded-[10px] px-7 py-3 text-[16px] font-bold uppercase leading-[90%] localfont2 transition-colors duration-300"
   
   const variantStyles = {
     primary: "bg-gradient-to-r from-primary to-primary-2 text-white border hover:border-primary border-white/0 hover:from-primary/70 hover:to-primary-2/70 hover:to-primary-2/70 ",
