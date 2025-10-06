@@ -54,12 +54,13 @@ const Navbar = () => {
       {/* Left side - Logo and Links */}
       <div className="flex items-center gap-8">
         {/* Logo */}
-        <div 
+        <a 
+          href="/"
           ref={(el) => { itemsRef.current[0] = el }}
-          className="text-primary text-[24px] font-bold"
+          className="text-primary text-[24px] font-bold hover:text-primary/80 transition-colors duration-200 cursor-pointer"
         >
           Nexa
-        </div>
+        </a>
 
         {/* Navigation Links */}
         {links.map((link, index) => (

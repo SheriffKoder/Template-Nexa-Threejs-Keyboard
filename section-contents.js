@@ -2,17 +2,17 @@
 export const navbar_links = [
     {
         name: "How it works",
-        href: "#how-it-works",
+        href: "/#how-it-works",
         type: "link",
     },
     {
         name: "Pricing",
-        href: "#pricing",
+        href: "/#pricing",
         type: "link",
     },
     {
         name: "Get Started",
-        href: "#get-started",
+        href: "/#get-started",
         type: "button-primary",
     },
     {
@@ -104,28 +104,28 @@ export const problem_solution_content = {
 export const how_it_works_content = {
     Texts: {
         heading: "How It Works",
-        paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        paragraph: "Get started in minutes with our simple 5-step integration process.",
     },
     steps: [
         {
             title: "Connect Gmail for email automation",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            description: "Automatically sync your emails, create smart filters, and set up automated responses across all your accounts.",
         },
         {
             title: "Sync Google Sheets for data management",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            description: "Keep your data synchronized in real-time, create automated reports, and manage your spreadsheets effortlessly.",
         },
         {
             title: "Integrate Google Calendar for scheduling",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            description: "Sync all your calendars, automate meeting scheduling, and never miss important appointments again.",
         },
         {
             title: "Connect Slack for team communication",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            description: "Streamline team communication with automated notifications, smart channel management, and workflow integration.",
         },
         {
             title: "Deploy AI agents to automate workflows",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+            description: "Let our intelligent AI agents handle repetitive tasks, analyze data patterns, and optimize your entire workflow automatically.",
         },
     ],
 }
@@ -172,7 +172,7 @@ export const pricing_content = {
 export const testimonials_content = {
     Texts: {
         title: "What early adopters are saying",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        description: "Join thousands of teams who have already transformed their productivity with Nexa.",
     },
     cards: [
         {
