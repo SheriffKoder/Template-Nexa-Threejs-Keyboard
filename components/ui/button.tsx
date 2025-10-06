@@ -6,6 +6,7 @@ interface ButtonProps {
   onClick?: () => void
   className?: string
   scale?: number
+  type?: 'button' | 'submit' | 'reset'
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({ 
@@ -13,7 +14,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
   children, 
   onClick, 
   className = '',
-  scale = 1
+  scale = 1,
+  type = 'button'
 }, ref) => {
   const baseStyles = "buttonText cursor-pointer text-white rounded-[10px] px-7 py-3 text-[16px] font-bold uppercase leading-[90%] localfont2 transition-colors duration-300"
   
@@ -25,6 +27,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
   return (
     <button
       ref={ref}
+      type={type}
       className={`${baseStyles} ${variantStyles[variant]} ${className}`}
       onClick={onClick}
       style={{ scale: scale }}
